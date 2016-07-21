@@ -29,29 +29,29 @@ map:wordPOS a d2rq:PropertyBridge;
     d2rq:property :pos;
     d2rq:column "synset.POS";
     d2rq:lang "en";
-    d2rq:propertyDefinitionLabel "position"@en;
+    d2rq:propertyDefinitionLabel "position"@en.
 
 
 map:positiveScore a d2rq:PropertyBridge;
     d2rq:belongsToClassMap map:SentiWordNet;
     d2rq:property :positiveScore;
     d2rq:column "synset.PosScore";
-    d2rq:propertyDefinitionLabel "score"@en;
+    d2rq:propertyDefinitionLabel "score"@en.
 
 map:positiveScore a d2rq:PropertyBridge;
     d2rq:belongsToClassMap map:SentiWordNet;
     d2rq:property :negativeScore;
     d2rq:column "synset.NegScore";
-    d2rq:propertyDefinitionLabel "score"@en;
+    d2rq:propertyDefinitionLabel "score"@en.
 
 map:synsetTerms a d2rq:PropertyBridge;
     d2rq:belongsToClassMap map:SentiWordNet;
     d2rq:property :terms;
     d2rq:column "synset.SynsetTerms";
-    d2rq:propertyDefinitionLabel "terms"@en;
+    d2rq:propertyDefinitionLabel "terms"@en.
 
 map:glossary a d2rq:PropertyBridge;
     d2rq:belongsToClassMap map:SentiWordNet;
     d2rq:property :glossary;
     d2rq:column "synset.Gloss";
-    d2rq:propertyDefinitionLabel "glossary"@en;
+    d2rq:propertyDefinitionLabel "glossary"@en.
