@@ -38,7 +38,7 @@ map:positiveScore a d2rq:PropertyBridge;
     d2rq:column "synset.PosScore";
     d2rq:propertyDefinitionLabel "score"@en.
 
-map:positiveScore a d2rq:PropertyBridge;
+map:negativeScore a d2rq:PropertyBridge;
     d2rq:belongsToClassMap map:SentiWordNet;
     d2rq:property :negativeScore;
     d2rq:column "synset.NegScore";
