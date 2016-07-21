@@ -1,0 +1,4 @@
+SELECT * FROM <semantic-web-journal> WHERE{
+    ?submission <http://semantic-web-journal.com/ontology#reviewComment> ?review.
+    ?submission <http://purl.org/dc/terms/title> ?title.
+}
