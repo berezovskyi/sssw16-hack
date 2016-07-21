@@ -1,8 +1,14 @@
 import json
 
 import urllib.request
+import sys
+import fetchreviews
 
-rev_json = json.load(open('reviews.json'))
+#rev_json = json.load(open('reviews.json'))
+endpoint = "localhost:8890"
+if len(sys.argv) > 1:
+    endpoint = sys.argv[1]
+rev_json = fetchreviews.getreviewsjson(endpoint)
 
 for binding in rev_json.get('results')['bindings'][:2]:
     review = binding['review']['value']
