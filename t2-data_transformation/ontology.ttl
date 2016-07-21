@@ -16,6 +16,24 @@
 #################################################################
 
 
+###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#glossary
+
+:glossary rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :SentiWord ;
+          
+          rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#negativeScore
+
+:negativeScore rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf :score .
+
+
+
 ###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#pos
 
 :pos rdf:type owl:DatatypeProperty ;
@@ -23,6 +41,34 @@
      rdfs:domain :SentiWord ;
      
      rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#positiveScore
+
+:positiveScore rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf :score .
+
+
+
+###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#score
+
+:score rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :SentiWord ;
+       
+       rdfs:range xsd:double .
+
+
+
+###  http://www.semanticweb.org/sssw/ontologies/2016/6/synset#terms
+
+:terms rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain :SentiWord ;
+       
+       rdfs:range xsd:string .
 
 
 
