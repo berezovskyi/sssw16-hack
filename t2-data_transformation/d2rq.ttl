@@ -20,5 +20,13 @@ map:Database a d2rq:Database;
 # the pattern http://www.example.org/swn/resource/SYNSET.ID
 map:Conference a d2rq:ClassMap;
     d2rq:dataStorage map:Database;
-    d2rq:class :Synset;
+    d2rq:class :SentiWord;
     d2rq:uriPattern "http://www.example.org/swn/resource/@@synset.ID@@" .
+
+
+map:PaperTitle a d2rq:PropertyBridge;
+    d2rq:belongsToClassMap map:Conference;
+    d2rq:property :pos;
+    d2rq:column "POS";
+    d2rq:lang "en";
+    d2rq:propertyDefinitionLabel "position"@en;
